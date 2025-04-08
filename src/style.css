@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-blackest: "blackest", sans-serif;
+
+  --color-brown: #511824;
+  --color-red: #e41c40;
+  --color-black: #000000;
+  --color-white: #fff9f9;
+  --color-light-pink: #fff0f1;
+}
+
+.btn-outline-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.btn-outline-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-brown);
+  border-radius: 2px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.btn-outline-wrapper button {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--color-red);
+  border-radius: 2px;
+  color: #511824;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1rem;
+  z-index: 1; /* sits above the wrapper border */
+}
+
+.btn-filled {
+  background-color: var(--color-red);
+  border-radius: 2px;
+  box-shadow: 6px 6px 0px 0px #ffaaaa;
+  padding: 12px 20px;
+}
