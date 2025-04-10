@@ -10,13 +10,13 @@
     <title>Amaryllis</title>
   </head>
   <body class="bg-white">
-    <nav class="flex items-center justify-between px-16 py-4 bg-light-pink">
+    <nav class="flex items-center justify-between px-16 max-md:px-10 max-sm:px-4 py-4 bg-light-pink">
       <div>
         <img src="./media/images/full-logo.svg" alt="Amaryllis" />
       </div>
       <div>
         <ul
-          class="flex items-center gap-4 font-inter font-medium text-black opacity-80"
+          class="flex items-center gap-4 font-inter font-medium text-black opacity-80 max-sm:hidden"
         >
           <li>За нас</li>
           <li>Контакти</li>
@@ -29,15 +29,19 @@
     </nav>
 
     <header
-      class="flex justify-between items-center max-lg:flex-col max-lg:gap-5 px-16 py-20 bg-light-pink relative"
+      class="flex justify-between items-center max-lg:flex-col max-lg:gap-10 px-16 max-md:px-10 max-sm:px-4 py-20 bg-light-pink relative"
     >
       <div class="flex gap-5 flex-col max-lg:items-center">
-        <h1 class="font-blackest font-extrabold text-6xl max-xl:text-5xl tracking-wider">
+        <h1
+          class="font-blackest font-extrabold text-6xl max-xl:text-5xl tracking-wider"
+        >
           Свежест и <br />
           Красота от <br />
           <span class="text-red"> Природата</span>
         </h1>
-        <p class="font-inter opacity-80 leading-[140%] w-2/3 max-lg:text-center max-md:w-full">
+        <p
+          class="font-inter opacity-80 leading-[140%] w-2/3 max-lg:text-center max-md:w-full"
+        >
           Открийте богат избор от цветя, растения и аксесоари за вашия дом и
           градина. С нас получавате лично отношение, качествена селекция и
           удобен начин на пазаруване.
@@ -46,17 +50,15 @@
           Запиши се за нюзлетър
         </button>
       </div>
-      <div>
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          class="rounded-tl-[56px] rounded-br-[56px]"
-        >
-          <source src="./media/video/hero-flower.mp4" type="video/mp4" />
-        </video>
-      </div>
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="rounded-tl-[56px] rounded-br-[56px]"
+      >
+        <source src="./media/video/hero-flower.mp4" type="video/mp4" />
+      </video>
       <img
         src="./media/images/triangle.svg"
         alt="triangle"
@@ -64,7 +66,7 @@
       />
     </header>
 
-    <section class="mt-6 py-14 px-16 bg-white space-y-8">
+    <section class="mt-6 py-14 px-16 max-md:px-10 max-sm:px-4 bg-white space-y-8">
       <h2 class="font-montserrat font-bold text-center text-4xl z-10 relative">
         <span class="text-red">25 години </span> страст <br />
         към цветята
@@ -79,17 +81,17 @@
       <img
         src="./media/images/flower-garden.jpeg"
         alt="flower-garden"
-        class="rounded-tl-[40px] rounded-br-[40px] w-[700px] h-[450px] mx-auto object-cover"
+        class="rounded-tl-[40px] rounded-br-[40px] w-[700px] h-[450px] max-sm:w-full max-sm:max-h-[250px] mx-auto object-cover"
       />
     </section>
 
-    <section>
+    <section class="px-16 max-md:px-10 max-sm:px-4">
       <h2 class="font-montserrat font-bold text-center text-4xl z-10 relative">
         <span class="text-red">Богат избор</span> за <br />
         вашия бизнес и дом
       </h2>
       <div
-        class="flex items-center justify-center gap-16 py-14 px-16 bg-white flex-wrap"
+        class="flex items-center justify-center gap-16 py-14 px-16 max-md:px-10 max-sm:px-4 bg-white flex-wrap"
       >
         <div class="text-center space-y-1">
           <div
@@ -148,15 +150,19 @@
     </section>
 
     <section
-      class="flex items-center justify-center gap-5 px-16 py-16 relative max-lg:flex-col"
+      class="flex items-center justify-center gap-5 px-16 max-md:px-10 max-sm:px-4 py-16 relative max-lg:flex-col"
     >
       <div class="space-y-3 flex items-start flex-col max-lg:items-center">
-        <h2 class="font-montserrat font-bold text-left max-lg:text-center text-4xl z-10 relative">
+        <h2
+          class="font-montserrat font-bold text-left max-lg:text-center text-4xl z-10 relative"
+        >
           Посетете ни <br />
           в нашия <br />
           <span class="text-red">градински център</span>
         </h2>
-        <p class="font-inter font-normal text-left max-lg:text-center opacity-80 leading-[135%]">
+        <p
+          class="font-inter font-normal text-left max-lg:text-center opacity-80 leading-[135%]"
+        >
           Нашият градински център – Перфектното място за <br />
           любители на градинарството
         </p>
@@ -176,7 +182,7 @@
       />
     </section>
 
-    <section class="bg-light-pink px-16 py-20 space-y-4">
+    <section class="bg-light-pink px-16 max-md:px-10 max-sm:px-4 py-20 space-y-4">
       <h2 class="font-montserrat font-bold text-center text-4xl z-10 relative">
         Актуално от <br />
         <span class="text-red">света на цветята</span>
@@ -186,7 +192,9 @@
         съвети за грижа за вашите растения
       </p>
 
-      <div class="flex items-center justify-center max-lg:flex-col gap-3 space-y-4 mt-8">
+      <div
+        class="flex items-center justify-center max-lg:flex-col gap-3 space-y-4 mt-8"
+      >
         <div
           class="flex items-center justify-between max-sm:flex-col gap-4 bg-white rounded-tl-[40px] rounded-br-[40px]"
         >
@@ -209,7 +217,9 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-4 justify-between max-lg:flex-row max-lg:w-full max-md:flex-col h-full w-[380px]">
+        <div
+          class="flex flex-col gap-4 justify-between max-lg:flex-row max-lg:w-full max-md:flex-col h-full w-[380px]"
+        >
           <div
             class="p-5 space-y-3 w-fit bg-white rounded-tl-[24px] rounded-br-[24px]"
           >
@@ -269,7 +279,9 @@
       </video>
     </section>
 
-    <footer class="px-16 py-7 flex items-center justify-between max-lg:flex-col max-lg:gap-5">
+    <footer
+      class="px-16 max-md:px-10 max-sm:px-4 py-7 flex items-center justify-between max-lg:flex-col max-lg:gap-5"
+    >
       <div class="flex items-center gap-5 max-sm:flex-col">
         <img src="./media/images/full-logo.svg" alt="Amaryllis" />
         <ul class="flex items-center gap-5 font-inter text-sm font-normal">
@@ -279,7 +291,9 @@
           <li>Новини</li>
         </ul>
       </div>
-      <ul class="flex items-center gap-5 font-inter text-sm font-normal max-sm:text-center">
+      <ul
+        class="flex items-center gap-5 font-inter text-sm font-normal max-sm:text-center"
+      >
         <li>Политика за поверителност</li>
         <li>Copyright © 2024 Amaryllis</li>
       </ul>
