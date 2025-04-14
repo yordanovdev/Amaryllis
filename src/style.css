@@ -14,6 +14,14 @@
   --color-light-pink: #fff0f1;
 }
 
+@font-face {
+  font-family: blackest;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Blackest/Blackest\ Extra\ Bold.otf") format("opentype");
+}
+
 .btn-outline-wrapper {
   display: inline-block;
   position: relative;
